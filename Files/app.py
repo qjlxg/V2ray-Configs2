@@ -7,8 +7,7 @@ import os
 # Define a fixed timeout for HTTP requests
 TIMEOUT = 20  # seconds
 
-# Define the fixed text for the initial configuration
-fixed_text = ""
+
 
 # Base64 decoding function
 def decode_base64(encoded):
@@ -123,9 +122,6 @@ def main():
     for i in range(num_files):
         profile_title = f"🆓 Git:Barry-far | Sub{i+1} 🫂"
         encoded_title = base64.b64encode(profile_title.encode()).decode()
-        custom_fixed_text = 
-"""
-
         input_filename = os.path.join(output_folder, f"Sub{i + 1}.txt")
         with open(input_filename, "w") as f:
             f.write(custom_fixed_text)

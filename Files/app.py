@@ -77,35 +77,16 @@ def main():
 
     protocols = ["vmess", "vless", "trojan", "ss", "ssr", "hy2", "tuic", "warp://"]
     links = [
-        "https://raw.githubusercontent.com/MrPooyaX/VpnsFucking/main/Shenzo.txt",
-        "https://raw.githubusercontent.com/MrPooyaX/SansorchiFucker/main/data.txt",
-        "https://mrpooyax.camdvr.org/api/ramezan/lena.php?sub=1",
-        "https://mrpooyax.camdvr.org/api/ramezan/run.php?sub=1",
-        "https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/xray/base64/mix",
-        "https://mrpooyax.camdvr.org/api/ramezan/alpha.php?sub=1",
-        "https://raw.githubusercontent.com/ALIILAPRO/v2rayNG-Config/main/sub.txt",
-        "https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray",
-        "https://raw.githubusercontent.com/resasanian/Mirza/main/sub",
-        "https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/reality",
-        "https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/vless",
-        "https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/vmess",
-        "https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/trojan",
-        "https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/shadowsocks",
-        "https://raw.githubusercontent.com/ts-sf/fly/main/v2",
-        "https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2",
+        "https://github.com/qjlxg/YBSub/raw/refs/heads/master/sub/share/available",
+        "https://github.com/qjlxg/YBSub/raw/refs/heads/master/sub/share/ss",
+        "https://github.com/qjlxg/YBSub/raw/refs/heads/master/sub/share/ssr",
+        "https://github.com/qjlxg/YBSub/raw/refs/heads/master/sub/share/tr",
+        "https://github.com/qjlxg/YBSub/raw/refs/heads/master/sub/share/v2"
+        
     ]
     dir_links = [
-        "https://raw.githubusercontent.com/IranianCypherpunks/sub/main/config",
-        "https://raw.githubusercontent.com/sashalsk/V2Ray/main/V2Config",
-        "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.txt",
-        "https://raw.githubusercontent.com/itsyebekhe/HiN-VPN/main/subscription/normal/mix",
-        "https://raw.githubusercontent.com/sarinaesmailzadeh/V2Hub/main/merged",
-        "https://raw.githubusercontent.com/freev2rayconfig/V2RAY_SUBSCRIPTION_LINK/main/v2rayconfigs.txt",
-        "https://raw.githubusercontent.com/Everyday-VPN/Everyday-VPN/main/subscription/main.txt",
-        "https://mrpooya.top/SuperApi/BE.php",
-        "https://servers.astms.com/api/sub?v=2.0.3&ref=bevpn.net",
-        "https://raw.githubusercontent.com/C4ssif3r/V2ray-sub/main/all.txt"
-    ]
+        "https://raw.githubusercontent.com/IranianCypherpunks/sub/main/config"
+       ]
 
     decoded_links = decode_links(links)
     decoded_dir_links = decode_dir_links(dir_links)
@@ -141,7 +122,7 @@ def main():
         lines = f.readlines()
 
     num_lines = len(lines)
-    max_lines_per_file = 600
+    max_lines_per_file = 3600
     num_files = (num_lines + max_lines_per_file - 1) // max_lines_per_file
 
     for i in range(num_files):

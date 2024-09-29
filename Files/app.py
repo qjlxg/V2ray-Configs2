@@ -82,7 +82,12 @@ def main():
         "https://github.com/qjlxg/YBSub/raw/refs/heads/master/sub/share/ss",
         "https://github.com/qjlxg/YBSub/raw/refs/heads/master/sub/share/ssr",
         "https://github.com/qjlxg/YBSub/raw/refs/heads/master/sub/share/tr",
-        "https://github.com/qjlxg/YBSub/raw/refs/heads/master/sub/share/v2"
+        "https://github.com/qjlxg/YBSub/raw/refs/heads/master/sub/share/v2",
+        "https://github.com/qjlxg/Sub2/raw/refs/heads/main/sub/share/available",
+        "https://github.com/qjlxg/Sub2/raw/refs/heads/main/sub/share/ss",
+        "https://github.com/qjlxg/Sub2/raw/refs/heads/main/sub/share/ssr",
+        "https://github.com/qjlxg/Sub2/raw/refs/heads/main/sub/share/tr",
+        "https://github.com/qjlxg/Sub2/raw/refs/heads/main/sub/share/v2"
         
     ]
     dir_links = [

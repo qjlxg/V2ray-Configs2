@@ -106,9 +106,7 @@ def main():
             os.remove(filename1)
 
     # Write merged configs to output file
-    with open(output_filename, "w") as f:
-        f.write(fixed_text)
-        for config in merged_configs:
+       for config in merged_configs:
             f.write(config + "\n")
 
     # Split merged configs into smaller files (no more than 600 configs per file)

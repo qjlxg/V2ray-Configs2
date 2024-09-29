@@ -1,3 +1,4 @@
+
 import pybase64
 import base64
 import requests
@@ -7,7 +8,13 @@ import os
 # Define a fixed timeout for HTTP requests
 TIMEOUT = 20  # seconds
 
-
+# Define the fixed text for the initial configuration
+fixed_text = """#profile-title: base64:8J+GkyBHaXRodWIgfCBCYXJyeS1mYXIg8J+ltw==
+#profile-update-interval: 1
+#subscription-userinfo: upload=29; download=12; total=10737418240000000; expire=2546249531
+#support-url: https://github.com/barry-far/V2ray-Configs
+#profile-web-page-url: https://github.com/barry-far/V2ray-Configs
+"""
 
 # Base64 decoding function
 def decode_base64(encoded):
@@ -81,7 +88,7 @@ def main():
     dir_links = [
         "https://raw.githubusercontent.com/IranianCypherpunks/sub/main/config"
        ]
-
+    
     decoded_links = decode_links(links)
     decoded_dir_links = decode_dir_links(dir_links)
 
@@ -106,7 +113,9 @@ def main():
             os.remove(filename1)
 
     # Write merged configs to output file
-       for config in merged_configs:
+    with open(output_filename, "w") as f:
+        f.write(fixed_text)
+        for config in merged_configs:
             f.write(config + "\n")
 
     # Split merged configs into smaller files (no more than 600 configs per file)
@@ -120,6 +129,13 @@ def main():
     for i in range(num_files):
         profile_title = f"🆓 Git:Barry-far | Sub{i+1} 🫂"
         encoded_title = base64.b64encode(profile_title.encode()).decode()
+        custom_fixed_text = f"""#profile-title: base64:{encoded_title}
+#profile-update-interval: 1
+#subscription-userinfo: upload=29; download=12; total=10737418240000000; expire=2546249531
+#support-url: https://github.com/barry-far/V2ray-Configs
+#profile-web-page-url: https://github.com/barry-far/V2ray-Configs
+"""
+
         input_filename = os.path.join(output_folder, f"Sub{i + 1}.txt")
         with open(input_filename, "w") as f:
             f.write(custom_fixed_text)

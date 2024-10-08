@@ -87,12 +87,14 @@ def main():
         "https://github.com/qjlxg/Sub2/raw/refs/heads/main/sub/share/ss",
         "https://github.com/qjlxg/Sub2/raw/refs/heads/main/sub/share/ssr",
         "https://github.com/qjlxg/Sub2/raw/refs/heads/main/sub/share/tr",
+
         "https://github.com/qjlxg/Sub2/raw/refs/heads/main/sub/share/v2"
        
         
     ]
     dir_links = [
-        "https://raw.githubusercontent.com/IranianCypherpunks/sub/main/config"
+        "https://raw.githubusercontent.com/IranianCypherpunks/sub/main/config",
+        "https://raw.githubusercontent.com/qjlxg/ss/refs/heads/master/list_raw.txt"
        ]
     
     decoded_links = decode_links(links)

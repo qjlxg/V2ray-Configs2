@@ -86,8 +86,11 @@ def main():
         "https://github.com/qjlxg/Sub2/raw/refs/heads/main/sub/share/available",
         "https://github.com/qjlxg/Sub2/raw/refs/heads/main/sub/share/ss",
         "https://github.com/qjlxg/Sub2/raw/refs/heads/main/sub/share/ssr",
-        "https://github.com/qjlxg/Sub2/raw/refs/heads/main/sub/share/tr"
-
+        "https://github.com/qjlxg/Sub2/raw/refs/heads/main/sub/share/tr",
+        "https://github.com/qjlxg/genode/raw/refs/heads/main/public/ss.txt",
+        "https://github.com/qjlxg/genode/raw/refs/heads/main/public/ssr.txt",
+        "https://github.com/qjlxg/genode/raw/refs/heads/main/public/trojan.txt",
+        "https://github.com/qjlxg/genode/raw/refs/heads/main/public/vmess.txt"
        
        
         
